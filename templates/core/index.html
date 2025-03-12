@@ -1,0 +1,3598 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js'" lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Nest - Multipurpose eCommerce HTML Template</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="We specialise in design and improve product and se" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en-us" />
+    <meta property="og:title" content="Nest - Multipurpose eCommerce HTML Template" />
+    <meta property="og:site_name" content="Nest" />
+    <meta property="og:description" content="We specialise in design and improve product and se" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nest.apexcode.info/" />
+    <meta property="og:image" content="/media/site_logo/imgs/logo_VKBBW51_1.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nest - Multipurpose eCommerce HTML Template" />
+    <meta name="twitter:description" content="We specialise in design and improve product and se" />
+    <meta name="twitter:site" content="@Nest" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="media/site_logo/imgs/favicon_p4HhDzm_1.png" />
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <header class="header-area header-style-1 header-style-5 header-height-2">
+        <div class="mobile-promotion">
+
+            <span>You will get 25% discount <a class="active d-inline-block" style="color:#090101;"
+                    href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Shop now</a></span>
+
+        </div>
+        <div class="header-top header-top-ptb-1 d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="header-info">
+                            <ul>
+
+                                <li><a href="pages/about-us.html">About Us</a></li>
+
+                                <li><a href="dashboard/index.html">My Account</a></li>
+
+                                <!-- <li><a href="/order-tracking/">Order Tracking</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-4">
+                        <div class="text-center">
+                            <div id="news-flash" class="d-inline-block"
+                                style="overflow: hidden; position: relative; height: 15px;">
+                                <ul style="position: absolute; margin: 0px; padding: 0px; top: 0px;">
+
+                                    <li style="margin: 0px; padding: 0px; height: 15px;">
+                                        <i class="fi-rs-bell d-inline-block mr-5"></i>
+                                        <span class="d-inline-block">
+                                            <b class="text-success"> Ads</b> You will get 25% discount</span>
+                                        <a class="active d-inline-block"
+                                            href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Shop
+                                            now</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="header-info header-info-right">
+                            <ul>
+                                <li>Need help? Call Us: <strong class="text-brand"> + 1800 900</strong></li>
+
+
+                                <form action="https://nest.apexcode.info/set_currency/" method="post"
+                                    style="margin-right: 10px;">
+                                    <input type="hidden" name="csrfmiddlewaretoken"
+                                        value="rUXrhoHDITlHw61TYPeDCIayPbFSZniUZIz73hTuykrUNRDDXKd1vTT48Gt6pHVP">
+
+                                    <select name="currency" onchange="submit()">
+
+                                        <option value="EUR">
+                                            €
+                                            EUR
+                                        </option>
+
+                                        <option value="USD" selected="selected">
+                                            $
+                                            USD
+                                        </option>
+
+                                    </select>
+
+                                </form>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="logo logo-width-1">
+                        <a href="index.html"><img src="{% static 'media/site_logo/imgs/logo_VKBBW51_1.png' %}" alt="Nest" /></a>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-style-2">
+                            <form action="https://nest.apexcode.info/product-search/" method="post">
+                                <input type="hidden" name="csrfmiddlewaretoken"
+                                    value="rUXrhoHDITlHw61TYPeDCIayPbFSZniUZIz73hTuykrUNRDDXKd1vTT48Gt6pHVP">
+                                <select name="category-select" class="select-active  category-search"
+                                    id="category-search">
+                                    <option>All Categories</option>
+
+                                    <option>Food &amp; Beverage</option>
+
+                                    <option>Beauty &amp; Fragrances</option>
+
+                                    <option>Office &amp; Stationery</option>
+
+                                    <option>Consumer Electronics</option>
+
+                                    <option>Fashion &amp; Accessories</option>
+
+                                    <option>Home &amp; Furniture</option>
+
+                                    <option>Health &amp; Personal Care</option>
+
+                                    <option>Construction &amp; Hardware</option>
+
+                                    <option>Sports &amp; Fitness</option>
+
+                                    <option>Toys</option>
+
+                                    <option>Automotive</option>
+
+                                </select>
+                                <!-- <div class="form-group--icon position-relative">
+								<div id="cat-label" class="product-cat-label">All Categories</div>
+								<select name ="category-select" class="product-category-select category-search" id="category-search" name="categories[]">
+								<option >All Categories</option>								
+								
+										<option>Food &amp; Beverage</option>
+								
+										<option>Beauty &amp; Fragrances</option>
+								
+										<option>Office &amp; Stationery</option>
+								
+										<option>Consumer Electronics</option>
+								
+										<option>Fashion &amp; Accessories</option>
+								
+										<option>Home &amp; Furniture</option>
+								
+										<option>Health &amp; Personal Care</option>
+								
+										<option>Construction &amp; Hardware</option>
+								
+										<option>Sports &amp; Fitness</option>
+								
+										<option>Toys</option>
+								
+										<option>Automotive</option>
+								
+								</select>
+							</div> -->
+
+                                <input type="text" name="search-product" placeholder="Search for items..."
+                                    autocomplete="off" required />
+                                <button type="submit"><i class="fi-rs-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="header-action-right">
+                            <div class="header-action-2">
+
+
+                                <div class="header-action-icon-2">
+                                    <a class="mini-cart-icon" href="cart/index.html">
+                                        <img alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-cart.svg' %}" />
+
+                                        <span class="pro-count blue">0</span>
+
+                                    </a>
+                                    <a href="cart/index.html"><span class="lable">Cart</span></a>
+
+                                </div>
+
+                                <div class="header-action-icon-2">
+                                    <a href="dashboard/index.html">
+                                        <img class="svgInject" alt="Nest"
+                                            src="{% static 'assets/imgs/theme/icons/icon-user.svg' %}" />
+                                    </a>
+                                    <a href="dashboard/index.html"><span class="lable ml-0">Account</span></a>
+                                    <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                        <ul>
+
+
+                                            <li><a href="dashboard/index.html"><i
+                                                        class="fi fi-rs-user mr-10"></i>Login</a></li>
+                                            <li><a href="register/index.html"><i
+                                                        class="fi fi-rs-user-add mr-10"></i>Register</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-bottom header-bottom-bg-color sticky-bar">
+            <div class="container">
+                <div class="header-wrap header-space-between position-relative">
+                    <div class="logo logo-width-1 d-block d-lg-none">
+                        <a href="index.html"><img src="{% static 'media/site_logo/imgs/logo_VKBBW51_1.png' %}" alt="Nest" /></a>
+                    </div>
+                    <div class="header-nav d-none d-lg-flex">
+                        <div class="main-categori-wrap d-none d-lg-block">
+                            <a class="categories-button-active" href="index.html#">
+                                <span class="fi-rs-apps"></span> <span class="et">Trending</span> Categories
+                                <i class="fi-rs-angle-down"></i>
+                            </a>
+                            <div class="categories-dropdown-wrap categories-dropdown-active-large font-heading">
+                                <div class="d-flex categori-dropdown-inner">
+                                    <ul>
+
+                                        <li>
+                                            <a href="shop/super/food-beverage.html"> <img
+                                                    src="{% static 'media/categories/super/imgs/category-2_1.png' %}"
+                                                    alt="Food &amp; Beverage" />Food &amp; Beverage</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="shop/super/beauty-fragrances.html"> <img
+                                                    src="{% static 'assets/imgs/theme/icons/category-1.svg' %}"
+                                                    alt="Beauty &amp; Fragrances" />Beauty &amp; Fragrances</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="shop/super/office-stationery.html"> <img
+                                                    src="{% static 'assets/imgs/theme/icons/category-1.svg' %}"
+                                                    alt="Office &amp; Stationery" />Office &amp; Stationery</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="shop/super/consumer-electronics.html"> <img
+                                                    src="{% static 'media/categories/super/imgs/category-4_brSMGKb.png' %}"
+                                                    alt="Consumer Electronics" />Consumer Electronics</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="shop/super/fashion-accessories.html"> <img
+                                                    src="{% static 'media/categories/super/imgs/category-3.png' %}"
+                                                    alt="Fashion &amp; Accessories" />Fashion &amp; Accessories</a>
+                                        </li>
+
+
+                                    </ul>
+                                    <ul class="end">
+
+                                        <li>
+                                            <a href="shop/super/home-furniture.html"> <img
+                                                    src="{% static 'media/categories/super/imgs/category-10.png' %}"
+                                                    alt="Home &amp; Furniture" />Home &amp; Furniture</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="shop/super/health-personal-care.html"> <img
+                                                    src="{% static 'assets/imgs/theme/icons/category-1.svg' %}"
+                                                    alt="Health &amp; Personal Care" />Health &amp; Personal Care</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="shop/super/construction-hardware.html"> <img
+                                                    src="{% static 'media/categories/super/imgs/icon-4.png' %}"
+                                                    alt="Construction &amp; Hardware" />Construction &amp; Hardware</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="shop/super/sports-fitness.html"> <img
+                                                    src="{% static 'media/categories/super/imgs/icon-3.png' %}"
+                                                    alt="Sports &amp; Fitness" />Sports &amp; Fitness</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="shop/super/toys.html"> <img
+                                                    src="{% static 'media/categories/super/imgs/icon-2.png' %}" alt="Toys" />Toys</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+
+                                <div class="more_categories"> <a href="category-list/index.html"><span
+                                            class="fi-rs-apps"></span> <span class="heading-sm-1"> All
+                                            Categories...</span> </a></div>
+
+                            </div>
+                        </div>
+                        <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a class="active" href="index.html">Home <i class="fi-rs-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="index.html">Home 1</a></li>
+                                            <li><a href="home-2/index.html">Home 2</a></li>
+                                            <li><a href="home-3/index.html">Home 3</a></li>
+                                            <li><a href="home-4/index.html">Home 4</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="position-static hot-deals">
+                                        <img src="{% static 'assets/imgs/theme/icons/icon-hot-white.svg' %}"
+                                            alt="hot deals" /><a href="shop/index.html">Shop <i
+                                                class="fi-rs-angle-down"></i></a>
+                                        <ul class="mega-menu">
+
+                                            <li class="sub-mega-menu" style="width: 33%;">
+                                                <div class="menu-banner-wrap">
+                                                    <a
+                                                        href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                                        <img src="{% static 'media/ads/hot-deal-ad/banner-menu_UgjJTIO.png' %}"
+                                                            alt="Nest" /></a>
+                                                    <div class="menu-banner-content">
+                                                        <h4>Hot deals</h4>
+                                                        <h3>
+                                                            Don't miss<br />
+                                                            Trending
+                                                        </h3>
+                                                        <div class="menu-banner-price">
+                                                            <span class="new-price text-success">Save to 30%</span>
+                                                        </div>
+                                                        <div class="menu-banner-btn">
+                                                            <a
+                                                                href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Shop
+                                                                now</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-banner-discount">
+                                                        <h3>
+                                                            <span>30%</span>
+                                                            off
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="sub-mega-menu" style="width: 33%;">
+                                                <div class="menu-banner-wrap">
+                                                    <a
+                                                        href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                                        <img src="{% static 'media/ads/hot-deal-ad/banner-menu_khJ9a6v.png' %}"
+                                                            alt="Nest" /></a>
+                                                    <div class="menu-banner-content">
+                                                        <h4>Hot deals</h4>
+                                                        <h3>
+                                                            Don't miss<br />
+                                                            Trending
+                                                        </h3>
+                                                        <div class="menu-banner-price">
+                                                            <span class="new-price text-success">Save to 50%</span>
+                                                        </div>
+                                                        <div class="menu-banner-btn">
+                                                            <a
+                                                                href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Shop
+                                                                now</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-banner-discount">
+                                                        <h3>
+                                                            <span>50%</span>
+                                                            off
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="sub-mega-menu" style="width: 33%;">
+                                                <div class="menu-banner-wrap">
+                                                    <a
+                                                        href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                                        <img src="{% static 'media/ads/hot-deal-ad/banner-menu_UgjJTIO_6KQjjyu.png' %}"
+                                                            alt="Nest" /></a>
+                                                    <div class="menu-banner-content">
+                                                        <h4>Hot deals</h4>
+                                                        <h3>
+                                                            Don't miss<br />
+                                                            Trending
+                                                        </h3>
+                                                        <div class="menu-banner-price">
+                                                            <span class="new-price text-success">Save to 25%</span>
+                                                        </div>
+                                                        <div class="menu-banner-btn">
+                                                            <a
+                                                                href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Shop
+                                                                now</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-banner-discount">
+                                                        <h3>
+                                                            <span>25%</span>
+                                                            off
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+                                    <!-- <li>
+									<a href="/supplier-list/">Vendors</a>
+   
+								</li> -->
+                                    <li class="position-static">
+                                        <a href="category-list/index.html">Categories </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="supplier-list/index.html">Stores</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog/index.html">Blog</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="contact/index.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="hotline d-none d-lg-flex">
+                        <img src="{% static 'assets/imgs/theme/icons/icon-headphone-white.svg' %}" alt="hotline" />
+
+                        <p>1900 - 8888<span>24/7 Support Center</span></p>
+
+                    </div>
+                    <div class="header-action-icon-2 d-block d-lg-none">
+                        <div class="burger-icon burger-icon-white">
+                            <span class="burger-icon-top"></span>
+                            <span class="burger-icon-mid"></span>
+                            <span class="burger-icon-bottom"></span>
+                        </div>
+                    </div>
+                    <div class="header-action-right d-block d-lg-none">
+                        <div class="header-action-2">
+                            <div class="header-action-icon-2">
+                                <a href="dashboard/index.html">
+                                    <img alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-user.svg' %}" />
+
+                                </a>
+                            </div>
+                            <div class="header-action-icon-2">
+                                <a class="mini-cart-icon" href="cart/index.html">
+                                    <img alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-cart.svg' %}" />
+
+                                    <span class="pro-count white">0</span>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+    <div class="mobile-header-active mobile-header-wrapper-style">
+        <div class="mobile-header-wrapper-inner">
+            <div class="mobile-header-top">
+                <div class="mobile-header-logo">
+                    <a href="index.html"><img src="{% static 'media/site_logo/imgs/logo_VKBBW51_1.png' %}" alt="Nest" /></a>
+                </div>
+                <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
+                    <button class="close-style search-close">
+                        <i class="icon-top"></i>
+                        <i class="icon-bottom"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-header-content-area">
+                <div class="mobile-search search-style-3 mobile-header-border">
+                    <form action="https://nest.apexcode.info/product-search/" method="post">
+                        <input type="hidden" name="csrfmiddlewaretoken"
+                            value="rUXrhoHDITlHw61TYPeDCIayPbFSZniUZIz73hTuykrUNRDDXKd1vTT48Gt6pHVP">
+                        <input type="text" placeholder="Search for items…" autocomplete="off" required />
+                        <button type="submit"><i class="fi-rs-search"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-menu-wrap mobile-header-border">
+                    <!-- mobile menu start -->
+                    <nav>
+                        <ul class="mobile-menu font-heading">
+                            <li class="menu-item-has-children"><span class="menu-expand"><i
+                                        class="fi-rs-angle-small-down"></i></span>
+                                <a href="index.html">Home</a>
+                                <ul class="dropdown" style="display: none;">
+                                    <li><a href="index.html">Home 1</a></li>
+                                    <li><a href="home-2/index.html">Home 2</a></li>
+                                    <li><a href="home-3/index.html">Home 3</a></li>
+                                    <li><a href="home-4/index.html">Home 4</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="shop/index.html">shop</a>
+
+                            </li>
+                            <!-- <li class="menu-item-has-children">
+							<a href="/supplier-list/">Vendors</a>
+					
+						</li> -->
+                            <li class="menu-item-has-children">
+                                <a href="category-list/index.html">Categoreis</a>
+                                <ul class="dropdown">
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/food-beverage.html">Food &amp; Beverage</a>
+                                        <ul class="dropdown">
+
+
+                                            <li>
+                                                <a href="shop/main/custard-apple.html">Custard apple</a>
+                                            </li>
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/coffe-tea.html">Coffe &amp; Tea</a>
+                                            </li>
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/cake-milk.html">Cake &amp; Milk</a>
+                                            </li>
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/oganic-kiwi.html">Oganic Kiwi</a>
+                                            </li>
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/red-apple.html">Red Apple</a>
+                                            </li>
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/snack.html">Snack</a>
+                                            </li>
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/vegetables.html">Vegetables</a>
+                                            </li>
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/strawberry.html">Strawberry</a>
+                                            </li>
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/black-plum.html">Black plum</a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/beauty-fragrances.html">Beauty &amp; Fragrances</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/makeup.html">Makeup</a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/office-stationery.html">Office &amp; Stationery</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/books.html">Books</a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/consumer-electronics.html">Consumer Electronics</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/mobile-phones-tablets.html">Mobile Phones &amp;
+                                                    Tablets</a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/fashion-accessories.html">Fashion &amp; Accessories</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/clothing.html">Clothing</a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/home-furniture.html">Home &amp; Furniture</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/household-supplies.html">Household Supplies</a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/health-personal-care.html">Health &amp; Personal Care</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/health.html">Health</a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/construction-hardware.html">Construction &amp; Hardware</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/tools-home-improvements.html">Tools &amp; Home
+                                                    Improvements</a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/sports-fitness.html">Sports &amp; Fitness</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/fitness-training.html">Fitness &amp; Training</a>
+                                            </li>
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/toys.html">Toys</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/arts-crafts.html">Arts &amp; Crafts</a>
+                                            </li>
+
+
+
+
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+
+                                        <a href="shop/super/automotive.html">Automotive</a>
+                                        <ul class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <li>
+                                                <a href="shop/main/motorcycles.html">Motorcycles</a>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li class="menu-item-has-children">
+                                <a href="supplier-list/index.html">Stores</a>
+
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="blog/index.html">Blog</a>
+
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- mobile menu end -->
+                </div>
+                <div class="mobile-header-info-wrap">
+                    <div class="single-mobile-header-info">
+                        <a href="contact/index.html"><i class="fi-rs-marker"></i>Contact</a>
+                    </div>
+                    <div class="single-mobile-header-info">
+
+                        <a href="dashboard/index.html"><i class="fi-rs-user"></i>Log In / Sign Up </a>
+
+
+                    </div>
+                    <div class="single-mobile-header-info">
+                        <a href="index.html#"><i class="fi-rs-headphones"></i>(+01) - 2345 - 6789 </a>
+                    </div>
+                </div>
+                <div class="mobile-social-icon mb-50">
+                    <h6 class="mb-15">Follow Us</h6>
+
+                    <a href="https://www.facebook.com/"><img
+                            src="{% static 'assets/imgs/theme/icons/icon-facebook-white.svg' %}" alt="" /></a>
+                    <a href="https://twitter.com/"><img src="{% static 'assets/imgs/theme/icons/icon-twitter-white.svg' %}"
+                            alt="" /></a>
+                    <a href="https://www.instagram.com/"><img
+                            src="{% static 'assets/imgs/theme/icons/icon-instagram-white.svg' %}" alt="" /></a>
+                    <a href="https://www.pinterest.com/"><img
+                            src="{% static 'assets/imgs/theme/icons/icon-pinterest-white.svg' %}" alt="" /></a>
+                    <a href="https://www.youtube.com/"><img src="{% static 'assets/imgs/theme/icons/icon-youtube-white.svg' %}"
+                            alt="" /></a>
+
+                </div>
+                <div class="site-copyright">Copyright 2022 © store. All rights reserved. Powered by apexcode.info.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alert-container" class="not-visible">
+
+    </div>
+    <!--End header-->
+
+
+    <main class="main">
+        <section class="home-slider position-relative mb-30">
+            <div class="container">
+                <div class="home-slide-cover mt-30">
+                    <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
+
+                        <div class="single-hero-slider single-animation-wrap"
+                            style="background-image: url(/media/carousel/slider-8.png">
+                            <div class="slider-content">
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <h1 class="display-2 mb-40">
+                                        Don’t miss amazing <br />
+                                        grocery deals
+                                    </h1>
+                                </a>
+                                <p class="mb-65">Sign up for the daily newsletter</p>
+                                <form method="POST" class="form-subcriber d-flex selector-1">
+                                    <input type="hidden" name="csrfmiddlewaretoken"
+                                        value="rUXrhoHDITlHw61TYPeDCIayPbFSZniUZIz73hTuykrUNRDDXKd1vTT48Gt6pHVP">
+                                    <input id="subscribe-input-1" type="email" placeholder="Your emaill address"
+                                        required />
+                                    <button class="btn" type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="single-hero-slider single-animation-wrap"
+                            style="background-image: url(/media/carousel/slider-7.png">
+                            <div class="slider-content">
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <h1 class="display-2 mb-40">
+                                        Fresh Vegetables Bi<br />
+                                        g discount
+                                    </h1>
+                                </a>
+                                <p class="mb-65">Sign up for the daily newsletter</p>
+                                <form method="POST" class="form-subcriber d-flex selector-1">
+                                    <input type="hidden" name="csrfmiddlewaretoken"
+                                        value="rUXrhoHDITlHw61TYPeDCIayPbFSZniUZIz73hTuykrUNRDDXKd1vTT48Gt6pHVP">
+                                    <input id="subscribe-input-1" type="email" placeholder="Your emaill address"
+                                        required />
+                                    <button class="btn" type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="slider-arrow hero-slider-1-arrow"></div>
+                </div>
+            </div>
+        </section>
+        <!--End hero slider-->
+        <section class="popular-categories section-padding">
+            <div class="container wow animate__animated animate__fadeIn">
+                <div class="section-title">
+                    <div class="title">
+                        <h3>Featured Categories</h3>
+                        <ul class="list-inline nav nav-tabs links">
+
+                            <li class="list-inline-item nav-item"><a class="nav-link"
+                                    href="shop/super/consumer-electronics.html">Consumer Electronics</a></li>
+
+                            <li class="list-inline-item nav-item"><a class="nav-link"
+                                    href="shop/super/construction-hardware.html">Construction &amp; Hardware</a></li>
+
+                            <li class="list-inline-item nav-item"><a class="nav-link"
+                                    href="shop/super/home-furniture.html">Home &amp; Furniture</a></li>
+
+                            <li class="list-inline-item nav-item"><a class="nav-link"
+                                    href="shop/super/beauty-fragrances.html">Beauty &amp; Fragrances</a></li>
+
+                            <li class="list-inline-item nav-item"><a class="nav-link"
+                                    href="shop/super/automotive.html">Automotive</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="slider-arrow slider-arrow-2 flex-right carausel-10-columns-arrow"
+                        id="carausel-10-columns-arrows"></div>
+                </div>
+                <div class="carausel-10-columns-cover position-relative">
+                    <div class="carausel-10-columns" id="carausel-10-columns">
+
+
+                        <div class="card-2 bg-1 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/coffe-tea.html"><img src="{% static 'media/categories/main/imgs/cat-14.png' %}"
+                                        width="80" height="80" alt="Coffe &amp; Tea" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/coffe-tea.html">Coffe &amp; Tea</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-2 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/motorcycles.html"><img
+                                        src="{% static 'media/categories/main/imgs/71d3c3fba2e3a827377be873ccbd06ea.webp' %}"
+                                        width="80" height="80" alt="Motorcycles" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/motorcycles.html">Motorcycles</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-3 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/oganic-kiwi.html"><img
+                                        src="{% static 'media/categories/main/imgs/cat-12_SwJb7aF.png' %}" width="80" height="80"
+                                        alt="Oganic Kiwi" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/oganic-kiwi.html">Oganic Kiwi</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-4 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/clothing.html"><img
+                                        src="{% static 'media/categories/main/imgs/Books_c4668124e2_1.webp' %}" width="80" height="80"
+                                        alt="Clothing" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/clothing.html">Clothing</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-5 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/snack.html"><img src="{% static 'media/categories/main/imgs/cat-3_1.png' %}"
+                                        width="80" height="80" alt="Snack" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/snack.html">Snack</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-6 wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/custard-apple.html"><img src="{% static 'media/categories/main/imgs/cat-5.png' %}"
+                                        width="80" height="80" alt="Custard apple" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/custard-apple.html">Custard apple</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-7 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/tools-home-improvements.html"><img
+                                        src="{% static 'media/categories/main/imgs/3cfc55facd517d041fb7256c8f751fd5.webp' %}"
+                                        width="80" height="80" alt="Tools &amp; Home Improvements" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/tools-home-improvements.html">Tools &amp; Home Improvements</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-8 wow animate__animated animate__fadeInUp" data-wow-delay=".8s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/mobile-phones-tablets.html"><img
+                                        src="{% static 'media/categories/main/imgs/034fdb3fb17a294dfe7bf82b50877fac.webp' %}"
+                                        width="80" height="80" alt="Mobile Phones &amp; Tablets" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/mobile-phones-tablets.html">Mobile Phones &amp; Tablets</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-9 wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/arts-crafts.html"><img
+                                        src="{% static 'media/categories/main/imgs/a6ed534511ece8690935680b9d6ad25e.webp' %}"
+                                        width="80" height="80" alt="Arts &amp; Crafts" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/arts-crafts.html">Arts &amp; Crafts</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".10s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/vegetables.html"><img
+                                        src="{% static 'media/categories/main/imgs/cat-1_aibGMBs.png' %}" width="80" height="80"
+                                        alt="Vegetables" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/vegetables.html">Vegetables</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay=".11s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/fitness-training.html"><img
+                                        src="{% static 'media/categories/main/imgs/6545d863ea55fbd4863b2c4087825c64_1.webp' %}"
+                                        width="80" height="80" alt="Fitness &amp; Training" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/fitness-training.html">Fitness &amp; Training</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".12s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/makeup.html"><img
+                                        src="{% static 'media/categories/main/imgs/5060346f5bb533952f5b493fce8ef8d6.webp' %}"
+                                        width="80" height="80" alt="Makeup" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/makeup.html">Makeup</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-13 wow animate__animated animate__fadeInUp" data-wow-delay=".13s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/black-plum.html"><img src="{% static 'media/categories/main/imgs/cat-4.png' %}"
+                                        width="80" height="80" alt="Black plum" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/black-plum.html">Black plum</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-14 wow animate__animated animate__fadeInUp" data-wow-delay=".14s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/books.html"><img
+                                        src="{% static 'media/categories/main/imgs/Books_c4668124e2.webp' %}" width="80" height="80"
+                                        alt="Books" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/books.html">Books</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-15 wow animate__animated animate__fadeInUp" data-wow-delay=".15s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/health.html"><img
+                                        src="{% static 'media/categories/main/imgs/58f64b7c18e374c8405b98d6972a7b75.webp' %}"
+                                        width="80" height="80" alt="Health" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/health.html">Health</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-16 wow animate__animated animate__fadeInUp" data-wow-delay=".16s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/red-apple.html"><img
+                                        src="{% static 'media/categories/main/imgs/cat-9_Ks6xB71.png' %}" width="80" height="80"
+                                        alt="Red Apple" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/red-apple.html">Red Apple</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-17 wow animate__animated animate__fadeInUp" data-wow-delay=".17s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/cake-milk.html"><img
+                                        src="{% static 'media/categories/main/imgs/cat-13_AYk2np9.png' %}" width="80" height="80"
+                                        alt="Cake &amp; Milk" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/cake-milk.html">Cake &amp; Milk</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-18 wow animate__animated animate__fadeInUp" data-wow-delay=".18s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/strawberry.html"><img
+                                        src="{% static 'media/categories/main/imgs/cat-2_gcBQ13i.png' %}" width="80" height="80"
+                                        alt="Strawberry" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/strawberry.html">Strawberry</a></h6>
+
+                        </div>
+
+                        <div class="card-2 bg-19 wow animate__animated animate__fadeInUp" data-wow-delay=".19s">
+                            <figure class="img-hover-scale overflow-hidden">
+
+                                <a href="shop/main/household-supplies.html"><img
+                                        src="{% static 'media/categories/main/imgs/3e50c6fd349f94d6fd41961681e84725.webp' %}"
+                                        width="80" height="80" alt="Household Supplies" /></a>
+
+                            </figure>
+                            <h6><a href="shop/main/household-supplies.html">Household Supplies</a></h6>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End category slider-->
+        <section class="banners mb-25">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                            <img src="{% static 'media/ads/middlebar/banner-2.png' %}" alt="" />
+                            <div class="banner-text">
+                                <h4>
+                                    Make your Breakfa <br />st Healthy and Easy
+                                </h4>
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"
+                                    class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                            <img src="{% static 'media/ads/middlebar/banner-3.png' %}" alt="" />
+                            <div class="banner-text">
+                                <h4>
+                                    The best Organic <br />Products Online
+                                </h4>
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"
+                                    class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                            <img src="{% static 'media/ads/middlebar/banner-1.png' %}" alt="" />
+                            <div class="banner-text">
+                                <h4>
+                                    Everyday Fresh &amp; <br />Clean with Our Products
+                                </h4>
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"
+                                    class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <!--End banners-->
+        <section class="product-tabs section-padding position-relative">
+            <div class="container">
+                <div class="section-title style-2 wow animate__animated animate__fadeIn">
+                    <h3>Popular Products</h3>
+                </div>
+                <!--End nav-tabs-->
+                <div class="tab-content" id="myTabContent">
+                    <!--start tab one-->
+                    <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
+                        <div class="row product-grid-4">
+
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".0s">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a href="product-details/test.html">
+                                                <img class="default-img"
+                                                    src="https://nest.apexcode.info/media/products/imgs/%D8%A7%D8%AF%D9%88%D8%A7%D8%AA_%D9%85%D9%83%D8%AA%D8%A8%D9%8A%D8%A9_2.png"
+                                                    alt="test" />
+                                                <img class="hover-img"
+                                                    src="https://nest.apexcode.info/media/products/imgs/%D8%A7%D8%AF%D9%88%D8%A7%D8%AA_%D9%85%D9%83%D8%AA%D8%A8%D9%8A%D8%A9_2.png"
+                                                    alt="test" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+
+                                        </div>
+                                        <div class="product-badges product-badges-position product-badges-mrg">
+
+                                            <span class="new">New</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+
+                                            <a href="shop/super/toys.html">Toys</a>
+
+                                        </div>
+                                        <h2><a href="product-details/test.html">test</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 100%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (1)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a
+                                                    href="vendor-details/justtestx.html">justtestxx</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>USD 10.0</span>
+
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class="add" href="product-details/test.html"><i
+                                                        class="fi-rs-eye mr-5"></i>View </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".1s">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a href="product-details/angies-boomchickapop-sweet-salty-kettle-corn.html">
+                                                <img class="default-img" src="{% static 'media/products/imgs/product-8-1.jpg' %}"
+                                                    alt="Angie’s Boomchickapop Sweet &amp; Salty Kettle Corn" />
+                                                <img class="hover-img" src="{% static 'media/products/imgs/product-8-1.jpg' %}"
+                                                    alt="Angie’s Boomchickapop Sweet &amp; Salty Kettle Corn" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+
+                                        </div>
+                                        <div class="product-badges product-badges-position product-badges-mrg">
+
+                                            <span class="hot">Hot</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+
+                                            <a href="shop/super/food-beverage.html">Food &amp; Beverage</a>
+
+                                        </div>
+                                        <h2><a href="product-details/angies-boomchickapop-sweet-salty-kettle-corn.html">Angie’s
+                                                Boomchickapop Sweet &amp; Salty Kettle Corn</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 50%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (2)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a
+                                                    href="vendor-details/hambger.html">Hambger Hel</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>USD 15.0</span>
+
+                                                <span class="old-price">USD16.0</span>
+
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class="add"
+                                                    href="product-details/angies-boomchickapop-sweet-salty-kettle-corn.html"><i
+                                                        class="fi-rs-eye mr-5"></i>View </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".2s">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a
+                                                href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html">
+                                                <img class="default-img" src="{% static 'media/products/imgs/product-9-1.jpg' %}"
+                                                    alt="All Natural Italian-Style Chicken Meatballs" />
+                                                <img class="hover-img" src="{% static 'media/products/imgs/product-9-1.jpg' %}"
+                                                    alt="All Natural Italian-Style Chicken Meatballs" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+
+                                        </div>
+                                        <div class="product-badges product-badges-position product-badges-mrg">
+
+                                            <span class="new">New</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+
+                                            <a href="shop/super/food-beverage.html">Food &amp; Beverage</a>
+
+                                        </div>
+                                        <h2><a
+                                                href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html">All
+                                                Natural Italian-Style Chicken Meatballs</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 80%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (1)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a
+                                                    href="vendor-details/hambger.html">Hambger Hel</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>USD 12.0</span>
+
+                                                <span class="old-price">USD32.0</span>
+
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class="add"
+                                                    href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html"><i
+                                                        class="fi-rs-eye mr-5"></i>View </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".3s">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a
+                                                href="product-details/blue-diamond-almonds-lightly-salted-vegetables.html">
+                                                <img class="default-img" src="{% static 'media/products/imgs/product-6-1.jpg' %}"
+                                                    alt="Blue Diamond Almonds Lightly Salted Vegetables" />
+                                                <img class="hover-img" src="{% static 'media/products/imgs/product-6-1.jpg' %}"
+                                                    alt="Blue Diamond Almonds Lightly Salted Vegetables" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+
+                                        </div>
+                                        <div class="product-badges product-badges-position product-badges-mrg">
+
+                                            <span class="new">New</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+
+                                            <a href="shop/super/fashion-accessories.html">Fashion &amp; Accessories</a>
+
+                                        </div>
+                                        <h2><a
+                                                href="product-details/blue-diamond-almonds-lightly-salted-vegetables.html">Blue
+                                                Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 40%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (2)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a
+                                                    href="vendor-details/selem.html">Nature Food</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>USD 14.0</span>
+
+                                                <span class="old-price">USD18.0</span>
+
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class="add"
+                                                    href="product-details/blue-diamond-almonds-lightly-salted-vegetables.html"><i
+                                                        class="fi-rs-eye mr-5"></i>View </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".4s">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                                <img class="default-img"
+                                                    src="{% static 'media/products/imgs/product-1-1_mVTpJyf.jpg' %}"
+                                                    alt="Haagen-Dazs Caramel Cone Ice Cream Ketchup" />
+                                                <img class="hover-img" src="{% static 'media/products/imgs/product-1-1_mVTpJyf.jpg' %}"
+                                                    alt="Haagen-Dazs Caramel Cone Ice Cream Ketchup" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+
+                                        </div>
+                                        <div class="product-badges product-badges-position product-badges-mrg">
+
+                                            <span class="hot">Hot</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+
+                                            <a href="shop/super/automotive.html">Automotive</a>
+
+                                        </div>
+                                        <h2><a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Haagen-Dazs
+                                                Caramel Cone Ice Cream Ketchup</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 0%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (0)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a
+                                                    href="vendor-details/pizza.html">Totino&#x27;s Pizza</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>USD 13.0</span>
+
+                                                <span class="old-price">USD15.0</span>
+
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class="add"
+                                                    href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"><i
+                                                        class="fi-rs-eye mr-5"></i>View </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".5s">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a href="product-details/chobani-complete-vanilla-greek-yogurt.html">
+                                                <img class="default-img" src="{% static 'media/products/imgs/product-5-1.jpg' %}"
+                                                    alt="Chobani Complete Vanilla Greek Yogurt" />
+                                                <img class="hover-img" src="{% static 'media/products/imgs/product-5-1.jpg' %}"
+                                                    alt="Chobani Complete Vanilla Greek Yogurt" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+
+                                        </div>
+                                        <div class="product-badges product-badges-position product-badges-mrg">
+
+                                            <span class="new">New</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+
+                                            <a href="shop/super/consumer-electronics.html">Consumer Electronics</a>
+
+                                        </div>
+                                        <h2><a href="product-details/chobani-complete-vanilla-greek-yogurt.html">Chobani
+                                                Complete Vanilla Greek Yogurt</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 60%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (2)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a
+                                                    href="vendor-details/selem.html">Nature Food</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>USD 14.0</span>
+
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class="add"
+                                                    href="product-details/chobani-complete-vanilla-greek-yogurt.html"><i
+                                                        class="fi-rs-eye mr-5"></i>View </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".6s">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a
+                                                href="product-details/foster-farms-takeout-crispy-classic-buffalo-wings.html">
+                                                <img class="default-img" src="{% static 'media/products/imgs/product-7-1.jpg' %}"
+                                                    alt="Foster Farms Takeout Crispy Classic Buffalo Wings" />
+                                                <img class="hover-img" src="{% static 'media/products/imgs/product-7-1.jpg' %}"
+                                                    alt="Foster Farms Takeout Crispy Classic Buffalo Wings" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+
+                                        </div>
+                                        <div class="product-badges product-badges-position product-badges-mrg">
+
+                                            <span class="new">New</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+
+                                            <a href="shop/super/food-beverage.html">Food &amp; Beverage</a>
+
+                                        </div>
+                                        <h2><a
+                                                href="product-details/foster-farms-takeout-crispy-classic-buffalo-wings.html">Foster
+                                                Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 67%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (3)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a
+                                                    href="vendor-details/hambger.html">Hambger Hel</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>USD 14.0</span>
+
+                                                <span class="old-price">USD17.0</span>
+
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class="add"
+                                                    href="product-details/foster-farms-takeout-crispy-classic-buffalo-wings.html"><i
+                                                        class="fi-rs-eye mr-5"></i>View </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".7s">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a
+                                                href="product-details/gortons-beer-battered-fish-fillets-with-soft-paper.html">
+                                                <img class="default-img" src="{% static 'media/products/imgs/product-2-1.jpg' %}"
+                                                    alt="Gorton’s Beer Battered Fish Fillets with soft paper" />
+                                                <img class="hover-img" src="{% static 'media/products/imgs/product-2-1.jpg' %}"
+                                                    alt="Gorton’s Beer Battered Fish Fillets with soft paper" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+
+                                        </div>
+                                        <div class="product-badges product-badges-position product-badges-mrg">
+
+                                            <span class="hot">Hot</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+
+                                            <a href="shop/super/toys.html">Toys</a>
+
+                                        </div>
+                                        <h2><a
+                                                href="product-details/gortons-beer-battered-fish-fillets-with-soft-paper.html">Gorton’s
+                                                Beer Battered Fish Fillets with soft paper</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 60%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (1)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a
+                                                    href="vendor-details/pizza.html">Totino&#x27;s Pizza</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>USD 16.0</span>
+
+                                                <span class="old-price">USD19.0</span>
+
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class="add"
+                                                    href="product-details/gortons-beer-battered-fish-fillets-with-soft-paper.html"><i
+                                                        class="fi-rs-eye mr-5"></i>View </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".8s">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a
+                                                href="product-details/seeds-of-change-organic-quinoa-brown-red-rice.html">
+                                                <img class="default-img" src="{% static 'media/products/imgs/product-10-1.jpg' %}"
+                                                    alt="Seeds of Change Organic Quinoa, Brown, &amp; Red Rice" />
+                                                <img class="hover-img" src="{% static 'media/products/imgs/product-10-1.jpg' %}"
+                                                    alt="Seeds of Change Organic Quinoa, Brown, &amp; Red Rice" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+
+                                        </div>
+                                        <div class="product-badges product-badges-position product-badges-mrg">
+
+                                            <span class="hot">Hot</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+
+                                            <a href="shop/super/food-beverage.html">Food &amp; Beverage</a>
+
+                                        </div>
+                                        <h2><a
+                                                href="product-details/seeds-of-change-organic-quinoa-brown-red-rice.html">Seeds
+                                                of Change Organic Quinoa, Brown, &amp; Red Rice</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 0%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (0)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a
+                                                    href="vendor-details/hambger.html">Hambger Hel</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>USD 12.0</span>
+
+                                                <span class="old-price">USD15.0</span>
+
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class="add"
+                                                    href="product-details/seeds-of-change-organic-quinoa-brown-red-rice.html"><i
+                                                        class="fi-rs-eye mr-5"></i>View </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!--End product-grid-4-->
+                    </div>
+                    <!--En tab one-->
+
+                </div>
+                <!--End tab-content-->
+            </div>
+        </section>
+        <!--Products Tabs-->
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="banner-img style-6 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                            <img src="{% static 'media/ads/suppliers/banner-18.png' %}" alt="" />
+                            <div class="banner-text">
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <h6 class="mb-10 mt-30">Special grocery<br /> sale off this month</h6>
+                                </a>
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <p>Go to supplier</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="banner-img style-6 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                            <img src="{% static 'media/ads/suppliers/banner-17.png' %}" alt="" />
+                            <div class="banner-text">
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <h6 class="mb-10 mt-30">100% guaranteed<br /> all Fresh items</h6>
+                                </a>
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <p>Go to supplier</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="banner-img style-6 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                            <img src="{% static 'media/ads/suppliers/banner-16.png' %}" alt="" />
+                            <div class="banner-text">
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <h6 class="mb-10 mt-30">Everyday Fresh <br />with Our Products</h6>
+                                </a>
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <p>Go to supplier</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="banner-img style-6 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
+                            <img src="{% static 'media/ads/suppliers/banner-19.png' %}" alt="" />
+                            <div class="banner-text">
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <h6 class="mb-10 mt-30">Enjoy 15% OFF f<br />or all vegetable</h6>
+                                </a>
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                    <p>Go to supplier</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--End 4 banners-->
+        <section class="section-padding pb-5">
+            <div class="container">
+                <div class="section-title wow animate__animated animate__fadeIn">
+                    <h3 class="">Daily Best Sells</h3>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-3 d-none d-lg-flex wow animate__animated animate__fadeIn">
+                        <div class="banner-img style-2" style=" border-radius: 15px;
+                       overflow: hidden;
+                       height: 520px;
+                        background:url(media/ads/daily/banner-4.png) no-repeat center bottom;
+                       background-size: cover;
+                       width: 100%;
+                       .banner-text {
+                           top: 50px;
+                           transform: none;
+                       }">
+
+                            <div class="banner-text">
+                                <h2 class="mb-100">Bring nature into your home</h2>
+                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"
+                                    class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-12 wow animate__animated animate__fadeIn" data-wow-delay=".4s">
+                        <div class="tab-content" id="myTabContent-1">
+                            <!--start tab-pane-->
+                            <div class="tab-pane fade show active" id="tab-one-1" role="tabpanel"
+                                aria-labelledby="tab-one-1">
+                                <div class="carausel-4-columns-cover arrow-center position-relative">
+                                    <div class="slider-arrow slider-arrow-2 carausel-4-columns-arrow"
+                                        id="carausel-4-columns-arrows"></div>
+                                    <div class="carausel-4-columns carausel-arrow-center" id="carausel-4-columns">
+
+                                        <!--start product Wrap-->
+
+                                        <div class="product-cart-wrap">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a
+                                                        href="product-details/blue-diamond-almonds-lightly-salted-vegetables.html">
+                                                        <img class="default-img"
+                                                            src="{% static 'media/products/imgs/product-6-1.jpg' %}"
+                                                            alt="Blue Diamond Almonds Lightly Salted Vegetables" />
+                                                        <img class="hover-img" src="{% static 'media/products/imgs/product-6-1.jpg' %}"
+                                                            alt="Blue Diamond Almonds Lightly Salted Vegetables" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+
+                                                    <span class="new">New</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-content-wrap">
+                                                <div class="product-category">
+
+                                                    <a href="shop/super/fashion-accessories.html">Fashion &amp;
+                                                        Accessories</a>
+
+                                                </div>
+                                                <h2><a
+                                                        href="product-details/blue-diamond-almonds-lightly-salted-vegetables.html">Blue
+                                                        Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                                <div class="product-rate d-inline-block">
+                                                    <div class="product-rating" style="width: 40%"></div>
+                                                </div>
+                                                <div class="product-price mt-10">
+                                                    <span>$14.0 </span>
+
+                                                    <span class="old-price">USD18.0</span>
+
+                                                </div>
+                                                <div class="sold mt-15 mb-15">
+
+                                                </div>
+                                                <a href="product-details/blue-diamond-almonds-lightly-salted-vegetables.html"
+                                                    class="btn w-100 hover-up"><i class="fi-rs-eye"></i> View</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-cart-wrap">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a
+                                                        href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html">
+                                                        <img class="default-img"
+                                                            src="{% static 'media/products/imgs/product-9-1.jpg' %}"
+                                                            alt="All Natural Italian-Style Chicken Meatballs" />
+                                                        <img class="hover-img" src="{% static 'media/products/imgs/product-9-1.jpg' %}"
+                                                            alt="All Natural Italian-Style Chicken Meatballs" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+
+                                                    <span class="new">New</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-content-wrap">
+                                                <div class="product-category">
+
+                                                    <a href="shop/super/food-beverage.html">Food &amp; Beverage</a>
+
+                                                </div>
+                                                <h2><a
+                                                        href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html">All
+                                                        Natural Italian-Style Chicken Meatballs</a></h2>
+                                                <div class="product-rate d-inline-block">
+                                                    <div class="product-rating" style="width: 80%"></div>
+                                                </div>
+                                                <div class="product-price mt-10">
+                                                    <span>$12.0 </span>
+
+                                                    <span class="old-price">USD32.0</span>
+
+                                                </div>
+                                                <div class="sold mt-15 mb-15">
+
+                                                </div>
+                                                <a href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html"
+                                                    class="btn w-100 hover-up"><i class="fi-rs-eye"></i> View</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-cart-wrap">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a
+                                                        href="product-details/chobani-complete-vanilla-greek-yogurt.html">
+                                                        <img class="default-img"
+                                                            src="{% static 'media/products/imgs/product-5-1.jpg' %}"
+                                                            alt="Chobani Complete Vanilla Greek Yogurt" />
+                                                        <img class="hover-img" src="{% static 'media/products/imgs/product-5-1.jpg' %}"
+                                                            alt="Chobani Complete Vanilla Greek Yogurt" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+
+                                                    <span class="new">New</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-content-wrap">
+                                                <div class="product-category">
+
+                                                    <a href="shop/super/consumer-electronics.html">Consumer
+                                                        Electronics</a>
+
+                                                </div>
+                                                <h2><a
+                                                        href="product-details/chobani-complete-vanilla-greek-yogurt.html">Chobani
+                                                        Complete Vanilla Greek Yogurt</a></h2>
+                                                <div class="product-rate d-inline-block">
+                                                    <div class="product-rating" style="width: 60%"></div>
+                                                </div>
+                                                <div class="product-price mt-10">
+                                                    <span>$14.0 </span>
+
+                                                </div>
+                                                <div class="sold mt-15 mb-15">
+
+                                                </div>
+                                                <a href="product-details/chobani-complete-vanilla-greek-yogurt.html"
+                                                    class="btn w-100 hover-up"><i class="fi-rs-eye"></i> View</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-cart-wrap">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a
+                                                        href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                                        <img class="default-img"
+                                                            src="{% static 'media/products/imgs/product-1-1_mVTpJyf.jpg' %}"
+                                                            alt="Haagen-Dazs Caramel Cone Ice Cream Ketchup" />
+                                                        <img class="hover-img"
+                                                            src="{% static 'media/products/imgs/product-1-1_mVTpJyf.jpg' %}"
+                                                            alt="Haagen-Dazs Caramel Cone Ice Cream Ketchup" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+
+                                                    <span class="hot">Hot</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-content-wrap">
+                                                <div class="product-category">
+
+                                                    <a href="shop/super/automotive.html">Automotive</a>
+
+                                                </div>
+                                                <h2><a
+                                                        href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Haagen-Dazs
+                                                        Caramel Cone Ice Cream Ketchup</a></h2>
+                                                <div class="product-rate d-inline-block">
+                                                    <div class="product-rating" style="width: 0%"></div>
+                                                </div>
+                                                <div class="product-price mt-10">
+                                                    <span>$13.0 </span>
+
+                                                    <span class="old-price">USD15.0</span>
+
+                                                </div>
+                                                <div class="sold mt-15 mb-15">
+
+                                                </div>
+                                                <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"
+                                                    class="btn w-100 hover-up"><i class="fi-rs-eye"></i> View</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-cart-wrap">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a
+                                                        href="product-details/gortons-beer-battered-fish-fillets-with-soft-paper.html">
+                                                        <img class="default-img"
+                                                            src="{% static 'media/products/imgs/product-2-1.jpg' %}"
+                                                            alt="Gorton’s Beer Battered Fish Fillets with soft paper" />
+                                                        <img class="hover-img" src="{% static 'media/products/imgs/product-2-1.jpg' %}"
+                                                            alt="Gorton’s Beer Battered Fish Fillets with soft paper" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+
+                                                    <span class="hot">Hot</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-content-wrap">
+                                                <div class="product-category">
+
+                                                    <a href="shop/super/toys.html">Toys</a>
+
+                                                </div>
+                                                <h2><a
+                                                        href="product-details/gortons-beer-battered-fish-fillets-with-soft-paper.html">Gorton’s
+                                                        Beer Battered Fish Fillets with soft paper</a></h2>
+                                                <div class="product-rate d-inline-block">
+                                                    <div class="product-rating" style="width: 60%"></div>
+                                                </div>
+                                                <div class="product-price mt-10">
+                                                    <span>$16.0 </span>
+
+                                                    <span class="old-price">USD19.0</span>
+
+                                                </div>
+                                                <div class="sold mt-15 mb-15">
+
+                                                </div>
+                                                <a href="product-details/gortons-beer-battered-fish-fillets-with-soft-paper.html"
+                                                    class="btn w-100 hover-up"><i class="fi-rs-eye"></i> View</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-cart-wrap">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a
+                                                        href="product-details/angies-boomchickapop-sweet-salty-kettle-corn.html">
+                                                        <img class="default-img"
+                                                            src="{% static 'media/products/imgs/product-8-1.jpg' %}"
+                                                            alt="Angie’s Boomchickapop Sweet &amp; Salty Kettle Corn" />
+                                                        <img class="hover-img" src="{% static 'media/products/imgs/product-8-1.jpg' %}"
+                                                            alt="Angie’s Boomchickapop Sweet &amp; Salty Kettle Corn" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+
+                                                    <span class="hot">Hot</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-content-wrap">
+                                                <div class="product-category">
+
+                                                    <a href="shop/super/food-beverage.html">Food &amp; Beverage</a>
+
+                                                </div>
+                                                <h2><a
+                                                        href="product-details/angies-boomchickapop-sweet-salty-kettle-corn.html">Angie’s
+                                                        Boomchickapop Sweet &amp; Salty Kettle Corn</a></h2>
+                                                <div class="product-rate d-inline-block">
+                                                    <div class="product-rating" style="width: 50%"></div>
+                                                </div>
+                                                <div class="product-price mt-10">
+                                                    <span>$15.0 </span>
+
+                                                    <span class="old-price">USD16.0</span>
+
+                                                </div>
+                                                <div class="sold mt-15 mb-15">
+
+                                                </div>
+                                                <a href="product-details/angies-boomchickapop-sweet-salty-kettle-corn.html"
+                                                    class="btn w-100 hover-up"><i class="fi-rs-eye"></i> View</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-cart-wrap">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a
+                                                        href="product-details/seeds-of-change-organic-quinoa-brown-red-rice.html">
+                                                        <img class="default-img"
+                                                            src="{% static 'media/products/imgs/product-10-1.jpg' %}"
+                                                            alt="Seeds of Change Organic Quinoa, Brown, &amp; Red Rice" />
+                                                        <img class="hover-img"
+                                                            src="{% static 'media/products/imgs/product-10-1.jpg' %}"
+                                                            alt="Seeds of Change Organic Quinoa, Brown, &amp; Red Rice" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+
+                                                    <span class="hot">Hot</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-content-wrap">
+                                                <div class="product-category">
+
+                                                    <a href="shop/super/food-beverage.html">Food &amp; Beverage</a>
+
+                                                </div>
+                                                <h2><a
+                                                        href="product-details/seeds-of-change-organic-quinoa-brown-red-rice.html">Seeds
+                                                        of Change Organic Quinoa, Brown, &amp; Red Rice</a></h2>
+                                                <div class="product-rate d-inline-block">
+                                                    <div class="product-rating" style="width: 0%"></div>
+                                                </div>
+                                                <div class="product-price mt-10">
+                                                    <span>$12.0 </span>
+
+                                                    <span class="old-price">USD15.0</span>
+
+                                                </div>
+                                                <div class="sold mt-15 mb-15">
+
+                                                </div>
+                                                <a href="product-details/seeds-of-change-organic-quinoa-brown-red-rice.html"
+                                                    class="btn w-100 hover-up"><i class="fi-rs-eye"></i> View</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-cart-wrap">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a href="product-details/test.html">
+                                                        <img class="default-img"
+                                                            src="https://nest.apexcode.info/media/products/imgs/%D8%A7%D8%AF%D9%88%D8%A7%D8%AA_%D9%85%D9%83%D8%AA%D8%A8%D9%8A%D8%A9_2.png"
+                                                            alt="test" />
+                                                        <img class="hover-img"
+                                                            src="https://nest.apexcode.info/media/products/imgs/%D8%A7%D8%AF%D9%88%D8%A7%D8%AA_%D9%85%D9%83%D8%AA%D8%A8%D9%8A%D8%A9_2.png"
+                                                            alt="test" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+
+                                                    <span class="new">New</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-content-wrap">
+                                                <div class="product-category">
+
+                                                    <a href="shop/super/toys.html">Toys</a>
+
+                                                </div>
+                                                <h2><a href="product-details/test.html">test</a></h2>
+                                                <div class="product-rate d-inline-block">
+                                                    <div class="product-rating" style="width: 100%"></div>
+                                                </div>
+                                                <div class="product-price mt-10">
+                                                    <span>$10.0 </span>
+
+                                                </div>
+                                                <div class="sold mt-15 mb-15">
+
+                                                </div>
+                                                <a href="product-details/test.html" class="btn w-100 hover-up"><i
+                                                        class="fi-rs-eye"></i> View</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-cart-wrap">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a
+                                                        href="product-details/foster-farms-takeout-crispy-classic-buffalo-wings.html">
+                                                        <img class="default-img"
+                                                            src="{% static 'media/products/imgs/product-7-1.jpg' %}"
+                                                            alt="Foster Farms Takeout Crispy Classic Buffalo Wings" />
+                                                        <img class="hover-img" src="{% static 'media/products/imgs/product-7-1.jpg' %}"
+                                                            alt="Foster Farms Takeout Crispy Classic Buffalo Wings" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+
+                                                    <span class="new">New</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-content-wrap">
+                                                <div class="product-category">
+
+                                                    <a href="shop/super/food-beverage.html">Food &amp; Beverage</a>
+
+                                                </div>
+                                                <h2><a
+                                                        href="product-details/foster-farms-takeout-crispy-classic-buffalo-wings.html">Foster
+                                                        Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                                <div class="product-rate d-inline-block">
+                                                    <div class="product-rating" style="width: 67%"></div>
+                                                </div>
+                                                <div class="product-price mt-10">
+                                                    <span>$14.0 </span>
+
+                                                    <span class="old-price">USD17.0</span>
+
+                                                </div>
+                                                <div class="sold mt-15 mb-15">
+
+                                                </div>
+                                                <a href="product-details/foster-farms-takeout-crispy-classic-buffalo-wings.html"
+                                                    class="btn w-100 hover-up"><i class="fi-rs-eye"></i> View</a>
+                                            </div>
+                                        </div>
+
+                                        <!--End product Wrap-->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End tab-pane-->
+
+                        </div>
+                        <!--End tab-content-->
+                    </div>
+                    <!--End Col-lg-9-->
+                </div>
+            </div>
+        </section>
+        <!--End Best Sales-->
+        <section class="section-padding pb-5">
+            <div class="container">
+                <div class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0">
+                    <h3 class="">Deals Of The Day</h3>
+                    <a class="show-all" href="shop/index.html">
+                        All Deals
+                        <i class="fi-rs-angle-right"></i>
+                    </a>
+                </div>
+                <div class="row">
+
+
+                    <div class=" col-xl-3 col-lg-4 col-md-6  ">
+                        <div class="product-cart-wrap style-2 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".1s">
+                            <div class="product-img-action-wrap">
+                                <div class="product-img">
+                                    <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                        <img src="{% static 'media/ads/deal-time/banner-7.png' %}" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content-wrap">
+                                <div class="deals-countdown-wrap">
+                                    <div class="deals-countdown" data-countdown="2022/08/31 00:45:36"></div>
+                                </div>
+                                <div class="deals-content">
+                                    <h2><a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Signature
+                                            Wood-Fired Mushroom and Caramelized</a></h2>
+                                    <!-- <div class="product-rate-cover">
+                                    <div class="product-rate d-inline-block">
+                                        <div class="product-rating" style="width: 90%"></div>
+                                    </div>
+                                    <span class="font-small ml-5 text-muted"> (4.0)</span>
+                                </div> -->
+                                    <div>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details/selem.html">selem</a></span>
+                                    </div>
+                                    <div class="product-card-bottom">
+                                        <div class="product-price">
+                                            <span>USD15.0</span>
+
+                                            <span class="old-price">USD19.0</span>
+
+                                        </div>
+                                        <div class="add-cart">
+                                            <a class="add"
+                                                href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>View</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class=" col-xl-3 col-lg-4 col-md-6  ">
+                        <div class="product-cart-wrap style-2 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".2s">
+                            <div class="product-img-action-wrap">
+                                <div class="product-img">
+                                    <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                        <img src="{% static 'media/ads/deal-time/banner-8.png' %}" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content-wrap">
+                                <div class="deals-countdown-wrap">
+                                    <div class="deals-countdown" data-countdown="2022/08/31 00:45:04"></div>
+                                </div>
+                                <div class="deals-content">
+                                    <h2><a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Simply
+                                            Lemonade with Raspberry Juice</a></h2>
+                                    <!-- <div class="product-rate-cover">
+                                    <div class="product-rate d-inline-block">
+                                        <div class="product-rating" style="width: 90%"></div>
+                                    </div>
+                                    <span class="font-small ml-5 text-muted"> (4.0)</span>
+                                </div> -->
+                                    <div>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details/selem.html">selem</a></span>
+                                    </div>
+                                    <div class="product-card-bottom">
+                                        <div class="product-price">
+                                            <span>USD17.0</span>
+
+                                            <span class="old-price">USD19.0</span>
+
+                                        </div>
+                                        <div class="add-cart">
+                                            <a class="add"
+                                                href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>View</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class=" col-xl-3 col-lg-4 col-md-6 d-none d-lg-block ">
+                        <div class="product-cart-wrap style-2 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".3s">
+                            <div class="product-img-action-wrap">
+                                <div class="product-img">
+                                    <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                        <img src="{% static 'media/ads/deal-time/banner-5.png' %}" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content-wrap">
+                                <div class="deals-countdown-wrap">
+                                    <div class="deals-countdown" data-countdown="2022/08/31 00:46:22"></div>
+                                </div>
+                                <div class="deals-content">
+                                    <h2><a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Seeds
+                                            of Change Organic Quinoa, Brown, &amp; Red Rice</a></h2>
+                                    <!-- <div class="product-rate-cover">
+                                    <div class="product-rate d-inline-block">
+                                        <div class="product-rating" style="width: 90%"></div>
+                                    </div>
+                                    <span class="font-small ml-5 text-muted"> (4.0)</span>
+                                </div> -->
+                                    <div>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details/selem.html">selem</a></span>
+                                    </div>
+                                    <div class="product-card-bottom">
+                                        <div class="product-price">
+                                            <span>USD11.0</span>
+
+                                            <span class="old-price">USD19.0</span>
+
+                                        </div>
+                                        <div class="add-cart">
+                                            <a class="add"
+                                                href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>View</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class=" col-xl-3 col-lg-4 col-md-6 d-none d-xl-block  ">
+                        <div class="product-cart-wrap style-2 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".4s">
+                            <div class="product-img-action-wrap">
+                                <div class="product-img">
+                                    <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">
+                                        <img src="{% static 'media/ads/deal-time/banner-6.png' %}" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content-wrap">
+                                <div class="deals-countdown-wrap">
+                                    <div class="deals-countdown" data-countdown="2022/08/31 00:45:59"></div>
+                                </div>
+                                <div class="deals-content">
+                                    <h2><a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Perdue
+                                            Simply Smart Organics Gluten Free</a></h2>
+                                    <!-- <div class="product-rate-cover">
+                                    <div class="product-rate d-inline-block">
+                                        <div class="product-rating" style="width: 90%"></div>
+                                    </div>
+                                    <span class="font-small ml-5 text-muted"> (4.0)</span>
+                                </div> -->
+                                    <div>
+                                        <span class="font-small text-muted">By <a
+                                                href="vendor-details/selem.html">selem</a></span>
+                                    </div>
+                                    <div class="product-card-bottom">
+                                        <div class="product-price">
+                                            <span>USD11.0</span>
+
+                                            <span class="old-price">USD15.0</span>
+
+                                        </div>
+                                        <div class="add-cart">
+                                            <a class="add"
+                                                href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"><i
+                                                    class="fi-rs-shopping-cart mr-5"></i>View</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!--End Deals-->
+        <section class="section-padding mb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 wow animate__animated animate__fadeInUp"
+                        data-wow-delay="0">
+                        <h4 class="section-title style-1 mb-30 animated animated">Top Selling</h4>
+                        <div class="product-list-small animated animated">
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/seeds-of-change-organic-quinoa-brown-red-rice.html"><img
+                                            src="{% static 'media/products/imgs/product-10-1.jpg' %}"
+                                            alt="Seeds of Change Organic Quinoa, Brown, &amp; Red Rice" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a href="product-details/seeds-of-change-organic-quinoa-brown-red-rice.html">Seeds
+                                            of Change Organic Quinoa, Brown, &amp; Red Rice</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 0%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (0)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD12.0</span>
+
+                                        <span class="old-price">USD15.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/chobani-complete-vanilla-greek-yogurt.html"><img
+                                            src="{% static 'media/products/imgs/product-5-1.jpg' %}"
+                                            alt="Chobani Complete Vanilla Greek Yogurt" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a href="product-details/chobani-complete-vanilla-greek-yogurt.html">Chobani
+                                            Complete Vanilla Greek Yogurt</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 60%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (2)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD14.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/test.html"><img
+                                            src="https://nest.apexcode.info/media/products/imgs/%D8%A7%D8%AF%D9%88%D8%A7%D8%AA_%D9%85%D9%83%D8%AA%D8%A8%D9%8A%D8%A9_2.png"
+                                            alt="test" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a href="product-details/test.html">test</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 100%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (1)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD10.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 mb-md-0 wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".1s">
+                        <h4 class="section-title style-1 mb-30 animated animated">Trending Products</h4>
+                        <div class="product-list-small animated animated">
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html"><img
+                                            src="{% static 'media/products/imgs/product-9-1.jpg' %}"
+                                            alt="All Natural Italian-Style Chicken Meatballs" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a
+                                            href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html">All
+                                            Natural Italian-Style Chicken Meatballs</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 80%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (1)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD12.0</span>
+
+                                        <span class="old-price">USD32.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"><img
+                                            src="{% static 'media/products/imgs/product-1-1_mVTpJyf.jpg' %}"
+                                            alt="Haagen-Dazs Caramel Cone Ice Cream Ketchup" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Haagen-Dazs
+                                            Caramel Cone Ice Cream Ketchup</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 0%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (0)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD13.0</span>
+
+                                        <span class="old-price">USD15.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/chobani-complete-vanilla-greek-yogurt.html"><img
+                                            src="{% static 'media/products/imgs/product-5-1.jpg' %}"
+                                            alt="Chobani Complete Vanilla Greek Yogurt" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a href="product-details/chobani-complete-vanilla-greek-yogurt.html">Chobani
+                                            Complete Vanilla Greek Yogurt</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 60%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (2)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD14.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 d-none d-lg-block wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".2s">
+                        <h4 class="section-title style-1 mb-30 animated animated">Recently added</h4>
+                        <div class="product-list-small animated animated">
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/angies-boomchickapop-sweet-salty-kettle-corn.html"><img
+                                            src="{% static 'media/products/imgs/product-8-1.jpg' %}"
+                                            alt="Angie’s Boomchickapop Sweet &amp; Salty Kettle Corn" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a href="product-details/angies-boomchickapop-sweet-salty-kettle-corn.html">Angie’s
+                                            Boomchickapop Sweet &amp; Salty Kettle Corn</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 50%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (2)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD15.0</span>
+
+                                        <span class="old-price">USD16.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html"><img
+                                            src="{% static 'media/products/imgs/product-9-1.jpg' %}"
+                                            alt="All Natural Italian-Style Chicken Meatballs" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a
+                                            href="product-details/seeds-of-change-organic-quinoa-brown-red-rice-myixb.html">All
+                                            Natural Italian-Style Chicken Meatballs</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 80%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (1)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD12.0</span>
+
+                                        <span class="old-price">USD32.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"><img
+                                            src="{% static 'media/products/imgs/product-1-1_mVTpJyf.jpg' %}"
+                                            alt="Haagen-Dazs Caramel Cone Ice Cream Ketchup" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Haagen-Dazs
+                                            Caramel Cone Ice Cream Ketchup</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 0%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (0)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD13.0</span>
+
+                                        <span class="old-price">USD15.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 d-none d-xl-block wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".3s">
+                        <h4 class="section-title style-1 mb-30 animated animated">Top Rated</h4>
+                        <div class="product-list-small animated animated">
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/foster-farms-takeout-crispy-classic-buffalo-wings.html"><img
+                                            src="{% static 'media/products/imgs/product-7-1.jpg' %}"
+                                            alt="Foster Farms Takeout Crispy Classic Buffalo Wings" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a
+                                            href="product-details/foster-farms-takeout-crispy-classic-buffalo-wings.html">Foster
+                                            Farms Takeout Crispy Classic Buffalo Wings</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 67%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (3)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD14.0</span>
+
+                                        <span class="old-price">USD17.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/gortons-beer-battered-fish-fillets-with-soft-paper.html"><img
+                                            src="{% static 'media/products/imgs/product-2-1.jpg' %}"
+                                            alt="Gorton’s Beer Battered Fish Fillets with soft paper" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a
+                                            href="product-details/gortons-beer-battered-fish-fillets-with-soft-paper.html">Gorton’s
+                                            Beer Battered Fish Fillets with soft paper</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 60%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (1)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD16.0</span>
+
+                                        <span class="old-price">USD19.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row align-items-center hover-up">
+                                <figure class="col-md-4 mb-0">
+                                    <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html"><img
+                                            src="{% static 'media/products/imgs/product-1-1_mVTpJyf.jpg' %}"
+                                            alt="Haagen-Dazs Caramel Cone Ice Cream Ketchup" /></a>
+                                </figure>
+                                <div class="col-md-8 mb-0">
+                                    <h6>
+                                        <a href="product-details/haagen-dazs-caramel-cone-ice-cream-ketchup.html">Haagen-Dazs
+                                            Caramel Cone Ice Cream Ketchup</a>
+                                    </h6>
+                                    <div class="product-rate-cover">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 0%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (0)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>USD13.0</span>
+
+                                        <span class="old-price">USD15.0</span>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End 4 columns-->
+    </main>
+
+
+    <footer class="main">
+        <section class="newsletter mb-15 wow animate__animated animate__fadeIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="position-relative newsletter-inner">
+                            <div class="newsletter-content">
+                                <h2 class="mb-20">
+                                    Stay home & get your daily <br />
+                                    needs from our shop
+                                </h2>
+                                <p class="mb-45">Start You'r Daily Shopping with <span class="text-brand">Nest</span>
+                                </p>
+                                <form method="POST" class="form-subcriber d-flex selector-2">
+                                    <input type="hidden" name="csrfmiddlewaretoken"
+                                        value="rUXrhoHDITlHw61TYPeDCIayPbFSZniUZIz73hTuykrUNRDDXKd1vTT48Gt6pHVP">
+                                    <input id="subscribe-input-2" type="email" placeholder="Your emaill address"
+                                        required />
+                                    <button class="btn" type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                            <img src="{% static 'media/site_logo/imgs/banner-9.png' %}" alt="newsletter" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                        <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
+                            data-wow-delay="0">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-1.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Best prices & offers</h3>
+                                <p>Orders $50 or more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                        <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".1s">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-2.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Free delivery</h3>
+                                <p>24/7 amazing services</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                        <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".2s">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-3.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Great daily deal</h3>
+                                <p>When you sign up</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                        <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".3s">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-4.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Wide assortment</h3>
+                                <p>Mega Discounts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                        <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".4s">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-5.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Easy returns</h3>
+                                <p>Within 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-none">
+                        <div class="banner-left-icon d-flex align-items-center wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".5s">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-6.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Safe delivery</h3>
+                                <p>Within 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-padding footer-mid">
+            <div class="container pt-15 pb-20">
+                <div class="row">
+                    <div class="col">
+                        <div class="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0 wow animate__animated animate__fadeInUp"
+                            data-wow-delay="0">
+                            <div class="logo mb-30">
+                                <a href="index.html" class="mb-15"><img src="{% static 'media/site_logo/imgs/logo_VKBBW51_1.png' %}"
+                                        alt="Nest" /></a>
+                                <p class="font-lg text-heading"></p>
+                            </div>
+                            <ul class="contact-infor">
+
+                                <li><img src="{% static 'assets/imgs/theme/icons/icon-location.svg' %}"
+                                        alt="" /><strong>Address: </strong> <span>205 North Michigan Avenue, Suite 810
+                                        Chicago, 60601, USA</span></li>
+                                <li><img src="{% static 'assets/imgs/theme/icons/icon-contact.svg' %}" alt="" /><strong>Call
+                                        Us:</strong><span>(123) 456-7890</span></li>
+                                <li><img src="{% static 'assets/imgs/theme/icons/icon-email-2.svg' %}"
+                                        alt="" /><strong>Email:</strong><span><a href="cdn-cgi/l/email-protection.html"
+                                            class="__cf_email__"
+                                            data-cfemail="bfdcd0d1cbdedccbfffac9decdde91dcd0d2">[email&#160;protected]</a></span>
+                                </li>
+                                <li><img src="{% static 'assets/imgs/theme/icons/icon-clock.svg' %}"
+                                        alt="" /><strong>Hours:</strong><span>10:00 - 18:00, Mon - Sat</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-link-widget col wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                        <h4 class="widget-title">Company</h4>
+                        <ul class="footer-list mb-sm-5 mb-md-0">
+
+
+                            <li><a href="pages/about-us.html">About Us</a></li>
+
+
+
+                            <li><a href="pages/terms-of-service.html">Terms Of Service</a></li>
+
+
+
+                            <li><a href="pages/refund-policy.html">Refund Policy</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-link-widget col wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                        <h4 class="widget-title">Pages</h4>
+                        <ul class="footer-list mb-sm-5 mb-md-0">
+                            <li><a href="cart/index.html">View Cart</a></li>
+                            <!-- <li><a href="/order-tracking/">Track My Order</a></li> -->
+                            <li><a href="supplier-register/index.html">Become a Vendor</a></li>
+                            <li><a href="supplier-login/index.html">Vendor Login</a></li>
+                            <li><a href="contact/index.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-widget col wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                        <h4 class="widget-title">Categories</h4>
+                        <ul class="footer-list mb-sm-5 mb-md-0">
+
+                            <li><a href="shop/super/food-beverage.html">Food &amp; Beverage</a></li>
+
+                            <li><a href="shop/super/beauty-fragrances.html">Beauty &amp; Fragrances</a></li>
+
+                            <li><a href="shop/super/office-stationery.html">Office &amp; Stationery</a></li>
+
+                            <li><a href="shop/super/consumer-electronics.html">Consumer Electronics</a></li>
+
+                            <li><a href="shop/super/fashion-accessories.html">Fashion &amp; Accessories</a></li>
+
+                            <li><a href="shop/super/home-furniture.html">Home &amp; Furniture</a></li>
+
+                            <li><a href="shop/super/health-personal-care.html">Health &amp; Personal Care</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="footer-link-widget widget-install-app col wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".4s">
+                        <h4 class="widget-title">Install App</h4>
+                        <p class="">From App Store or Google Play</p>
+                        <div class="download-app">
+                            <a href="index.html#" class="hover-up mb-sm-2 mb-lg-0"><img class="active"
+                                    src="{% static 'assets/imgs/theme/app-store.jpg' %}" alt="" /></a>
+                            <a href="index.html#" class="hover-up mb-sm-2"><img
+                                    src="{% static 'assets/imgs/theme/google-play.jpg' %}" alt="" /></a>
+                        </div>
+                        <p class="mb-20">Secured Payment Gateways</p>
+                        <img class="" src="{% static 'assets/imgs/theme/payment-method.png' %}" alt="" />
+                    </div>
+                </div>
+        </section>
+        <div class="container pb-30 wow animate__animated animate__fadeInUp" data-wow-delay="0">
+            <div class="row align-items-center">
+                <div class="col-12 mb-30">
+                    <div class="footer-bottom"></div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <p class="font-sm mb-0">&copy; 2022, <strong class="text-brand">Nest</strong> - All rights reserved
+                    </p>
+                </div>
+                <div class="col-xl-4 col-lg-6 text-center d-none d-xl-block">
+
+                    <div class="hotline d-lg-inline-flex mr-30">
+                        <img src="{% static 'assets/imgs/theme/icons/phone-call.svg' %}" alt="hotline" />
+                        <p>1900 - 8888<span>24/7 Support Center</span></p>
+                    </div>
+
+                    <div class="hotline d-lg-inline-flex mr-30">
+                        <img src="{% static 'assets/imgs/theme/icons/phone-call.svg' %}" alt="hotline" />
+                        <p>1900 - 6666<span>Working 8:00 - 22:00</span></p>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 text-end d-none d-md-block">
+                    <div class="mobile-social-icon">
+                        <h6>Follow Us</h6>
+
+                        <a href="https://www.facebook.com/"><img
+                                src="{% static 'assets/imgs/theme/icons/icon-facebook-white.svg' %}" alt="" /></a>
+                        <a href="https://twitter.com/"><img src="{% static 'assets/imgs/theme/icons/icon-twitter-white.svg' %}"
+                                alt="" /></a>
+                        <a href="https://www.instagram.com/"><img
+                                src="{% static 'assets/imgs/theme/icons/icon-instagram-white.svg' %}" alt="" /></a>
+                        <a href="https://www.pinterest.com/"><img
+                                src="{% static 'assets/imgs/theme/icons/icon-pinterest-white.svg' %}" alt="" /></a>
+                        <a href="https://www.youtube.com/"><img
+                                src="{% static 'assets/imgs/theme/icons/icon-youtube-white.svg' %}" alt="" /></a>
+
+                    </div>
+                    <p class="font-sm">Up to 15% discount on your first subscribe</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="text-center">
+                    <img src="{% static 'assets/imgs/theme/loading.gif' %}" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor JS-->
+    <script data-cfasync="false" src="{% static 'cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-migrate-3.3.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/slick.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.syotimer.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/waypoints.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/wow.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/perfect-scrollbar.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/magnific-popup.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/select2.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/counterup.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/images-loaded.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/isotope.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/scrollup.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.vticker-min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.theia.sticky.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.elevatezoom.js' %}"></script>
+    <!-- Template  JS -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/shop.js' %}"></script>
+
+    <script>
+        const formOne = document.querySelector(".selector-1");
+        const formTwo = document.querySelector(".selector-2");
+
+        const subscribeInputOne = document.getElementById("subscribe-input-1");
+        const subscribeInputTwo = document.getElementById("subscribe-input-2");
+        const csrf = document.getElementsByName('csrfmiddlewaretoken');
+
+        const boxMessage = document.getElementById("alert-container");
+        if (formOne) {
+            formOne.addEventListener('submit', e => {
+
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "/letter/",
+                    data: {
+                        'csrfmiddlewaretoken': csrf[0].value,
+                        'value': subscribeInputOne.value,
+                    },
+                    success: function (response) {
+
+                        boxMessage.classList.remove("not-visible")
+                        boxMessage.innerHTML = `<div class="alert alert-${response.alert} alert-dismissible">	
+															<i class="fi-rs-${response.mark} message-icon"></i>
+															${response.message}
+															<span class="btn-close" data-bs-dismiss="alert" aria-label="close"></span>
+														</div>`
+                        setTimeout(() => {
+                            boxMessage.classList.add("not-visible")
+                            subscribeInputOne.value = ""
+                        }, 3000)
+                    },
+                    error: function (error) {
+
+                        boxMessage.classList.remove("not-visible")
+                        boxMessage.innerHTML = `<div class="alert alert-danger alert-dismissible">	
+															<i class="fi-rs-cross message-icon"></i>
+															Ops ... some thing went wrong !
+															<span class="btn-close" data-bs-dismiss="alert" aria-label="close"></span>
+														</div>`
+                        setTimeout(() => {
+                            boxMessage.classList.add("not-visible")
+                            subscribeInputOne.value = ""
+                        }, 2000)
+                    },
+
+
+                })
+
+
+            })
+        }
+
+
+        if (formTwo) {
+            formTwo.addEventListener('submit', e => {
+
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "/letter/",
+                    data: {
+                        'csrfmiddlewaretoken': csrf[0].value,
+                        'value': subscribeInputTwo.value,
+                    },
+                    success: function (response) {
+
+                        boxMessage.classList.remove("not-visible")
+                        boxMessage.innerHTML = `<div class="alert alert-${response.alert} alert-dismissible">	
+															<i class="fi-rs-${response.mark} message-icon"></i>
+															${response.message}
+															<span class="btn-close" data-bs-dismiss="alert" aria-label="close"></span>
+														</div>`
+                        setTimeout(() => {
+                            boxMessage.classList.add("not-visible")
+                            subscribeInputTwo.value = ""
+                        }, 3000)
+                    },
+                    error: function (error) {
+
+                        boxMessage.classList.remove("not-visible")
+                        boxMessage.innerHTML = `<div class="alert alert-danger alert-dismissible">	
+															<i class="fi-rs-cross message-icon"></i>
+															Ops ... some thing went wrong !
+															<span class="btn-close" data-bs-dismiss="alert" aria-label="close"></span>
+														</div>`
+                        setTimeout(() => {
+                            boxMessage.classList.add("not-visible")
+                            subscribeInputTwo.value = ""
+                        }, 2000)
+                    },
+
+
+                })
+
+
+            })
+        }
+    </script>
+</body>
+
+</html>
