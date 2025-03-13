@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     # My Apps
     'core',
+    'userauths',
 ]
 
 MIDDLEWARE = [
@@ -138,8 +139,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
+    'site_title': 'Agrimart Admin',
     'site_brand': 'AGRIMART',
     'site_header': 'Join The Agricultural Revolution',
     'site_logo': 'assets/imgs/theme/loading.gif',
-    'copyright': 'agrimart.com By Kadilana Mbogo'
+    'copyright': 'agrimart.com By Kadilana Mbogo',
+    'welcome_sign': 'Welcome to Agrimart Super-admin'
 }
+
+AUTH_USER_MODEL = 'userauths.User'
