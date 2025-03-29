@@ -1,4 +1,4 @@
-#!/home/user/Documents/project/agrimart/.venv/bin/python3
+#!/home/kadilana/Documents/Code/class/agrimart/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

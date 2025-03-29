@@ -60,7 +60,7 @@ def login_view(request):
             return redirect('userauths:login')
         
     context = {
-        'form': form
+        'form': form,
     }
     
     return render(request, 'userauths/login.html', context)

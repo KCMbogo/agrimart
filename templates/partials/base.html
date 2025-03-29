@@ -26,19 +26,6 @@
 <body>
     <!-- Quick view -->
     <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
-        {% if messages %}
-            {% for message in messages %}
-                <div class="h-25 alert alert-{{ message.tags }}">
-                    <small>{{ message }}</small>
-                </div>
-            {% endfor %}
-        {% endif %}
-        <!-- Javascript for disappearing alert -->
-        <script>
-        setTimeout(()=>{
-        $(".alert").alert("close")
-        }, 6000)
-        </script>
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -304,7 +291,7 @@
                                     <a href="page-account.html">
                                         <img class="svgInject" alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-user.svg' %}" />
                                     </a>
-                                    <a href="page-account.html"><span class="lable ml-0">Account</span></a>
+                                    <a href="#"><span class="lable ml-0">Account</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                         <ul>
                                             <li>
@@ -322,9 +309,16 @@
                                             <li>
                                                 <a href="page-account.html"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a>
                                             </li>
+                                            {% if request.user.is_authenticated %}
                                             <li>
                                                 <a href="{% url 'userauths:logout' %}"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
                                             </li>
+                                            {% else %}
+                                            <li>
+                                                <a href="{% url 'userauths:login' %}"><i class="fi fi-rs-sign-in mr-10"></i>Sign In</a>
+                                            </li>
+                                            {% endif %}
+
                                         </ul>
                                     </div>
                                 </div>
@@ -639,6 +633,19 @@
                 </div>
             </div>
         </div>
+        {% if messages %}
+            {% for message in messages %}
+                <div class="h-25 alert alert-{{ message.tags }} text-center">
+                    <small>{{ message }}</small>
+                </div>
+            {% endfor %}
+        {% endif %}
+        <!-- Javascript for disappearing alert -->
+        <script>
+            setTimeout(()=>{
+            $(".alert").alert("close")
+            }, 6000)
+        </script>
     </header>
     <div class="mobile-header-active mobile-header-wrapper-style">
         <div class="mobile-header-wrapper-inner">
