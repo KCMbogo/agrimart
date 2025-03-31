@@ -114,7 +114,8 @@ class Product(models.Model):
         return self.title
     
     def get_percentage(self):
-        new_price = (self.price / self.old_price) * 100
+        new_price = (self.old_price - self.price) / self.old_price * 100
+        new_price = round(new_price, 1)
         return new_price
     
 
