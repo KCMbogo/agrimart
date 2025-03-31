@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-0mm!n=kz!e0rfegg(dl$6md@2)km6d(^zs=f4xwy3)-09zrop0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'agrimart-mchb.onrender.com',
+]
 
 
 # Application definition
