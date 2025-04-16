@@ -2,6 +2,7 @@ from django.db import models
 from shortuuid.django_fields import ShortUUIDField
 from django.utils.html import mark_safe
 from userauths.models import User
+from django_ckeditor_5.fields import CKEditor5Field
 
 def user_directory_path(instance, filename):
     # return f'user_{instance.user.id}/{filename}'
@@ -78,14 +79,14 @@ class Product(models.Model):
     pid = ShortUUIDField(primary_key=True, editable=False, length=10, max_length=30, prefix="pro_", alphabet="0123456789abcdefghijklmn")
     title = models.CharField(max_length=100)
     image = models.ImageField(upload_to=user_directory_path)
-    description = models.TextField(blank=True, null=True)
+    description = CKEditor5Field(blank=True, null=True)
     
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     
     price = models.DecimalField(max_digits=10, decimal_places=2)
     old_price = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
     
-    specifications = models.TextField(blank=True, null=True)
+    specifications = CKEditor5Field(config_name="extends",blank=True, null=True)
     
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     vendor = models.ForeignKey(Vendor, on_delete=models.CASCADE)
@@ -126,6 +127,9 @@ class ProductImages(models.Model):
     
     class Meta:
         verbose_name_plural = "Product Images"
+        
+    def __str__(self):
+        return self.product.title
         
     
 class CartOrder(models.Model):

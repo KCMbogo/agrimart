@@ -589,7 +589,7 @@
         <div class="mobile-header-wrapper-inner">
             <div class="mobile-header-top">
                 <div class="mobile-header-logo">
-                    <a href="index.html"><img src="{% static 'assets/imgs/theme/logo.svg' %}" alt="logo" /></a>
+                    <a href="{% url 'core:index' %}"><img src="{% static 'assets/imgs/theme/logo.svg' %}" alt="logo" /></a>
                 </div>
                 <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
                     <button class="close-style search-close">
@@ -621,38 +621,26 @@
                             <li>
                                 <a href="#">Blog</a>
                             </li>
-                            <li class="menu-item-has-children">
-                                <a href="index-6.html#">Language</a>
-                                <ul class="dropdown">
-                                    <li><a href="index-6.html#">English</a></li>
-                                    <li><a href="index-6.html#">French</a></li>
-                                    <li><a href="index-6.html#">German</a></li>
-                                    <li><a href="index-6.html#">Spanish</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </nav>
                     <!-- mobile menu end -->
                 </div>
                 <div class="mobile-header-info-wrap">
-                    <div class="single-mobile-header-info">
+                    {% comment %} <div class="single-mobile-header-info">
                         <a href="page-contact.html"><i class="fi-rs-marker"></i> Our location </a>
-                    </div>
+                    </div> {% endcomment %}
                     <div class="single-mobile-header-info">
                         <a href="page-login.html"><i class="fi-rs-user"></i>Log In / Sign Up </a>
                     </div>
-                    <div class="single-mobile-header-info">
-                        <a href="index-6.html#"><i class="fi-rs-headphones"></i>(+01) - 2345 - 6789 </a>
-                    </div>
                 </div>
-                <div class="mobile-social-icon mb-50">
+                {% comment %} <div class="mobile-social-icon mb-50">
                     <h6 class="mb-15">Follow Us</h6>
-                    <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-facebook-white.svg' %}" alt="" /></a>
-                    <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-twitter-white.svg' %}" alt="" /></a>
-                    <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-instagram-white.svg' %}" alt="" /></a>
-                    <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-pinterest-white.svg' %}" alt="" /></a>
-                    <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-youtube-white.svg' %}" alt="" /></a>
-                </div>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-facebook-white.svg' %}" alt="" /></a>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-twitter-white.svg' %}" alt="" /></a>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-instagram-white.svg' %}" alt="" /></a>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-pinterest-white.svg' %}" alt="" /></a>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-youtube-white.svg' %}" alt="" /></a>
+                </div> {% endcomment %}
                 <div class="site-copyright">Copyright 2024 © Nest. All rights reserved. Powered by AliThemes.</div>
             </div>
         </div>
@@ -1032,14 +1020,14 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 text-end d-none d-md-block">
-                <div class="mobile-social-icon">
+                {% comment %} <div class="mobile-social-icon">
                     <h6>Follow Us</h6>
                     <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-facebook-white.svg' %}" alt="" /></a>
                     <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-twitter-white.svg' %}" alt="" /></a>
                     <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-instagram-white.svg' %}" alt="" /></a>
                     <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-pinterest-white.svg' %}" alt="" /></a>
                     <a href="index-6.html#"><img src="{% static 'assets/imgs/theme/icons/icon-youtube-white.svg' %}" alt="" /></a>
-                </div>
+                </div> {% endcomment %}
                 <p class="font-sm">Up to 15% discount on your first subscribe</p>
             </div>
         </div>
