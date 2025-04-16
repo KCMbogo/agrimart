@@ -58,10 +58,12 @@
                                 </div>
                                 <div class="clearfix product-price-cover">
                                     <div class="product-price primary-color float-left"> 
-                                        <span>
-                                            <span class="save-price font-md color3 ml-15">{{ product.get_percentage }}% Off</span>
-                                            <span class="old-price font-md ml-15">Tsh.{{ product.old_price }}</span>
-                                        </span>
+                                        {% if product.old_price %}
+                                            <span>
+                                                <span class="save-price font-md color3 ml-15">{{ product.get_percentage }}% Off</span>
+                                                <span class="old-price font-md ml-15">Tsh.{{ product.old_price }}</span>
+                                            </span>
+                                        {% endif %}
                                         <span class="current-price text-brand">Tsh.{{ product.price }}</span>
                                     </div>
                                 </div>
@@ -273,36 +275,37 @@
                         </div>
                         <div class="col-12">
                             <div class="row related-products">
-                                <div class="col-lg-3 col-md-4 col-12 col-sm-6">
-                                    <div class="product-cart-wrap hover-up">
-                                        <div class="product-img-action-wrap">
-                                            <div class="product-img product-img-zoom">
-                                                <a href="shop-product-right.html" tabindex="0">
-                                                    <img class="default-img" src="assets/imgs/shop/product-2-1.jpg" alt="" />
-                                                    <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg" alt="" />
-                                                </a>
+                                {% for other in related_products %}
+                                    <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+                                        <div class="product-cart-wrap hover-up">
+                                            <div class="product-img-action-wrap">
+                                                <div class="product-img product-img-zoom">
+                                                    <a href="{% url 'core:product' other.pid %}" tabindex="0">
+                                                        <img class="default-img" src="{{ other.image.url }}" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-action-1">
+                                                    <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                                </div>
+                                                <div class="product-badges product-badges-position product-badges-mrg">
+                                                    <span class="hot">Hot</span>
+                                                </div>
                                             </div>
-                                            <div class="product-action-1">
-                                                <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-search"></i></a>
-                                                <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html" tabindex="0"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html" tabindex="0"><i class="fi-rs-shuffle"></i></a>
-                                            </div>
-                                            <div class="product-badges product-badges-position product-badges-mrg">
-                                                <span class="hot">Hot</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap">
-                                            <h2><a href="shop-product-right.html" tabindex="0">Ulstra Bass Headphone</a></h2>
-                                            <div class="rating-result" title="90%">
-                                                <span> </span>
-                                            </div>
-                                            <div class="product-price">
-                                                <span>$238.85 </span>
-                                                <span class="old-price">$245.8</span>
+                                            <div class="product-content-wrap">
+                                                <h2><a href="{% url 'core:product' other.pid %}" tabindex="0">{{ other.title }}</a></h2>
+                                                <div class="rating-result" title="90%">
+                                                    <span> </span>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span>Tsh.{{ other.price }} </span>
+                                                    {% if other.old_price %}
+                                                        <span class="old-price">Tsh.{{ other.old_price }}</span>
+                                                    {% endif %}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
